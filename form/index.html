@@ -6,36 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
     <style>
-
-        body{
-            display: flex;
-            justify-content: space-between;
+        #nav-bar{
+        display: flex;
+        justify-content: space-around;
+        background-color: #000066;
+        font-size: 1.5rem;
         }
-    </style>
+        #nav-bar p a{
+            color: white;
+            border: 2px solid white;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+</style>
+<style>
+    #forms{
+        display: flex;
+    };
+</style>
     <style>
         #user-feedback{
             width: 100px;
         };
     </style>
     <style>
-     #btn-sub{
-            background-color: rgb(205, 50, 97);
-            padding: .6rem 1.5rem;
-            border-radius: 10px;
-            color: white;
-            font-size: .8rem;
-            font-weight: bold;
-            border: none;
-        };
-    </style>
-    <style>
         #optional-form{
             width: 100px;
-            margin-left: -400px;
+            margin-left: 200px;
         }
     </style>
     <style>
-         #btn-sub2{
+         .btn{
             background-color: rgb(205, 50, 97);
             padding: .6rem 1.5rem;
             border-radius: 10px;
@@ -45,65 +46,64 @@
             border: none;
         };
     </style>
+
 </head>
 <body>
-    <form id="user-feedback">
-        <fieldset>
-            <legend>Feedback</legend>
-            <label for="user-name">Your Name :
-                <input type="text" name="user-name" id="user-name" placeholder="Your full name...">
-            </label><br><br>
-            <label for="user-email"> Email Address:
-                <input type="email" name="user-email" id="user-email" required = "required" placeholder="Your Email..">
-            </label><br><br>
-            <label for="user-Password">Password :
-                <input type="password" name="user-Password" id="user-Password" required = "required" placeholder="Enter Your Password here..">
-            </label> <br><br>
-            <label for="Gender">
-                Gender :
-                <input type="radio" name="Gender" value="Male" checked = "checked"> Male
-                <input type="radio" name="Gender" value="Female"> Female
-            </label><br><br>
-            <label for="feedb">
-                <textarea name="feedb" id="feedb" cols="30" rows="10">Kindly give your valuable feedback here..
-                </textarea>
-            </label>
-            <label for="btn">
-                <input type="submit" id="btn-sub" name="btn">
-            </label>
-          
-        </fieldset>
-    </form>
-        <form id="optional-form">
+    <div id="nav-bar">
+        <p><a href="../index.html">home</a></p>
+        <p><a href="../contact/index.html">Contact</a></p>
+        <p><a href="../skills/index.html">Skills</a></p>
+        <p><a href="../projects/index.html">Projects</a></p>
+        <p><a href="../experience/index.html">experience</a></p>
+    </div>
+    <div id="forms">
+        <form id="user-feedback">
             <fieldset>
-                <legend>Optional Details</legend>
-                <input type="file" value="upload File" name="file">
-                <br><br>
-                <label for="link">
-                    Url : <input type="url" name="link">
+                <legend>Feedback</legend>
+                <label for="user-name">Your Name :
+                    <input type="text" name="user-name" id="user-name" placeholder="Your full name...">
+                </label><br><br>
+                <label for="user-email"> Email Address:
+                    <input type="email" name="user-email" id="user-email" required = "required" placeholder="Your Email..">
+                </label><br><br>
+                <label for="user-Password">Password :
+                    <input type="password" name="user-Password" id="user-Password" required = "required" placeholder="Enter Your Password here..">
+                </label> <br><br>
+                <label for="Gender">
+                    Gender :
+                    <input type="radio" name="Gender" value="Male" checked = "checked"> Male
+                    <input type="radio" name="Gender" value="Female"> Female
+                </label><br><br>
+                <label for="feedb">
+                    <textarea name="feedb" id="feedb" cols="30" rows="10">Kindly give your valuable feedback here..
+                    </textarea>
                 </label>
-                <p>District : <select name="city" id="city">
-                    <option>Select</option>
-                    <option>Swat</option>
-                    <option>Chitral</option>
-                    <option>Peshawar</option>
-                </select></p>
-                <label for="btn2">
-                    <input type="submit" id="btn-sub2" name="btn2">
+                <label for="btn">
+                    <input type="submit" class="btn" name="btn">
                 </label>
+              
             </fieldset>
         </form>
-        <ul id="links">
-            <p>Back to home click here..</p>
-            <li><a href="../index.html">home</a></li>
-            <p>Check out my Contact details</p>
-            <li><a href="../contact/index.html">Contact</a></li>
-            <p>Check out my Skills</p>
-            <li><a href="../skills/index.html">Skills</a></li>
-            <p>Check out my Recent projects</p>
-            <li><a href="../projects/index.html">Projects</a></li>
-            <p>My experience</p>
-            <li><a href="../experience/index.html">experience</a></li>
-        </ul>
+            <form id="optional-form">
+                <fieldset>
+                    <legend>Optional Details</legend>
+                    <input type="file" value="upload File" name="file">
+                    <br><br>
+                    <label for="link">
+                        Url : <input type="url" name="link">
+                    </label>
+                    <p>District : <select name="city" id="city">
+                        <option>Select</option>
+                        <option>Swat</option>
+                        <option>Chitral</option>
+                        <option>Peshawar</option>
+                    </select></p>
+                    <label for="btn2">
+                        <input type="submit" class="btn" name="btn2">
+                    </label>
+                </fieldset>
+            </form>
+    </div>
+
 </body>
 </html>

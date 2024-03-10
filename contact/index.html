@@ -4,19 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        a {
+            font-size: 1.5rem;
+        }
+    </style>
+    <style>
+            #nav-bar{
+            display: flex;
+            justify-content: space-around;
+            background-color: #000066;
+            font-size: 1.5rem;
+            }
+            #nav-bar a{
+                color: white;
+                border: 2px solid white;
+                border-radius: 10px;
+                text-decoration: none;
+            }
+    </style>
+    <style>
+        #body{
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
 </head>
 <body>
-    <img src="../images/whatsapp-icon-2040x2048-8b5th74o.png" width="50">
-    <h2>03464646811</h2>
-    <img src="../images/mail.jpg" alt="" width="50">
-    <h2>shahfawadkhan0@gmail.com</h2>
-    <img src="../images/lindin.png" width="50">
-    <h2>Shah Fawad Khan</h2>
-    <hr>
-    <a href="../index.html">Back to Home</a><br>
-    <a href="../projects/index.html">Project</a><br>
-    <a href="../skills/index.html">Skills</a><br>
-    <a href="../experience/index.html">experience</a><br>
-    <a href="../form/index.html">feedback-form</a>
+    <div id="nav-bar">
+        <p><a href="../index.html">Home</a></p>
+        <p><a href="../projects/index.html">Project</a></p>
+        <p><a href="../skills/index.html">Skills</a></p>
+        <p><a href="../experience/index.html">experience</a></p>
+        <p><a href="../form/index.html">feedback-form</a></p>
+    </div>
+    <div id="body">
+        <img src="../images/whatsapp-icon-2040x2048-8b5th74o.png" width="50">
+        <a href="https://wa.me/923464646811">Whatsapp</a>
+        <img src="../images/mail.jpg" alt="" width="50">
+        <a href="mailTo:sfawadkhan92@gmail.com">Gmail</a>
+        <img src="../images/lindin.png" width="50">
+        <a href="https://www.linkedin.com/in/shah-fawad-khan-ba9380285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkdIn</a>    
+    </div>
+
 </body>
 </html>
