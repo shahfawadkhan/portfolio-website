@@ -3,67 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        thead,tr,th,tbody,tfoot,td,table{
-            border:1px solid black ;
-            border-collapse:collapse;
-            background-color: lightyellow;
-        }
-    </style>
-    <style>
-         #nav-bar{
-            display: flex;
-            justify-content: space-around;
-            background-color: #000066;
-            font-size: 1.5rem;
-            }
-            #nav-bar p a{
-                color: white;
-                border: 2px solid white;
-                border-radius: 10px;
-                text-decoration: none;
-            }
-    </style>
+    <title>experience</title>
 </head>
+<link rel="stylesheet" href="style.css">
 <body>
-    <div id="nav-bar">
-        <p><a href="../index.html">Home</a></p>
-        <p><a href="../form/index.html">Feedback-form</a></p>
-        <p><a href="../projects/index.html">Project</a></p>
-        <p><a href="../skills/index.html">Skills</a></p>
-        <p><a href="../contact/index.html">Contact</a></p>
-    </div>
-    <table>
-        <thead>
-            <tr>
-                <th>EXPERIENCE</th>
-                <th>COMPANY</th>
-                <th>LOCATION</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    2Y
-                </td>
-                <td>XYZ</td>
-                <td>PESHAWAR</td>
-            </tr>
-            <tr>
-                <td>
-                    3Y
-                </td>
-                <td>
-                    ABC
-                </td>
-                <td>
-                    ISLAMABAD
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <hr>
+
+    <header>
+        <nav id="nav-bar">
+            <p><a href="../index.html">Home</a></p>
+            <p><a href="../form/index.html" style="text-decoration: none;">Feedback-form</a></p>
+            <p><a href="../contact/index.html" style="text-decoration: none;">Contact</a></p>
+            <p><a href="../skills/index.html" style="text-decoration: none;">Skills</a></p>
+            <p><a href="../projects/index.html" style="text-decoration: none;">Projects</a></p>
+            <p><a href="#nav-bar" style="text-decoration: none;">Experience</a></p>
+        </nav>
+    </header>
+    
+    <section id="table">
+        <table>
+            <thead>
+                <tr>
+                    <th>EXPERIENCE</th>
+                    <th>COMPANY</th>
+                    <th>LOCATION</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        2Y
+                    </td>
+                    <td>XYZ</td>
+                    <td>PESHAWAR</td>
+                </tr>
+                <tr>
+                    <td>
+                        3Y
+                    </td>
+                    <td>
+                        ABC
+                    </td>
+                    <td>
+                        ISLAMABAD
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <footer id="footer">
+        <b>© Shah Fawad Khan 2024 <a href="#pp">Privacy policy</a>| <a href="#tos">ToS</a></b>
+        <p id="pp">Privacy Policy:
+            Our Privacy Policy explains how we collect, use, and protect your personal information. It includes details on data collection methods, purposes of data usage, security measures, third-party disclosures, cookie usage, your rights, and contact information for privacy-related inquiries.</p>
+        <p id="tos">Terms of Service (ToS):
+            Our Terms of Service outline the rules for using our website. It covers user responsibilities, acceptable behavior, copyright information, liability limitations, termination conditions, and governing laws.
+            </p>
+        
+    </footer>
+    
     
 
     
