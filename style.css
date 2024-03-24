@@ -24,3 +24,9 @@ thead,tr,th,tbody,tfoot,td,table{
     color:black;
     font-family: Arial, sans-serif;
 }
+#volume{
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
